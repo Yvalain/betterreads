@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: betterreads
+  cassandra:
+    keyspace-name: main
+    username: dibfRHDKkjIQLHNZpohIewUb
+    password: ZI-hM4Cn32WljJRUk59tvZcqrjYKXLBjLndDxRkNDIsAdTkBZ,N4Bud+u-oYfEnRul5o08jFz,lutbRjdUFk0PGam3RXXGSQpM2R-4lIad7qw2k9Ykd54gBUp1uBaJAx
+    schema-action: create_if_not_exists
+    request:
+      timeout: 10s
+    connection:
+      connect-timeout: 10s
+      init-query-timeout: 10s
+
+  main:
+    allow-circular-references: true
+
+datadump.location:
+  author: /Users/yvalain/Learning/Spring/JavaBrains/betterreads/src/main/resources/test-authors.txt
+  works: /Users/yvalain/Learning/Spring/JavaBrains/betterreads/src/main/resources/test-works.txt
+
+datastax.astra:
+  secure-connect-bundle: secure-connect.zip
+
+astra.db:
+  id: 86786dbb-dc32-4a68-983a-5f52e5421f29
+  region: us-east1
+  keyspace: main
+  application.token: AstraCS:dibfRHDKkjIQLHNZpohIewUb:93eb9f7ae3403b7fb500b2c03950b1646c9411f80a65c00f454466453f2f62bc
+
+      
+
